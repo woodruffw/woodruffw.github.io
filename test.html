@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Redirecting to docs.zizmor.sh</title>
-    <meta http-equiv="refresh" content="0;url=https://docs.zizmor.sh/release-notes/">
     <link rel="canonical" href="https://docs.zizmor.sh/release-notes/">
+    <script>
+        let fragment = window.location.hash.substring(1);
+        let redirectUrl = `https://docs.zizmor.sh/release-notes/${fragment}`;
+        document.getElementById("dest").setAttribute("href", redirectUrl);
+        setTimeout(function() {
+            window.location=redirectUrl
+        }, 3000);
+    </script>
 </head>
+<body>
+    <h1>Redirecting to docs.zizmor.sh</h1>
+    <p>If you are not redirected automatically, follow the <a id="dest" href="https://docs.zizmor.sh/release-notes/">link</a>.</p>
 </html>
