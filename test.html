@@ -7,7 +7,6 @@
     <script>
         let fragment = window.location.hash.substring(1);
         let redirectUrl = `https://docs.zizmor.sh/release-notes/${fragment}`;
-        document.getElementById("dest").setAttribute("href", redirectUrl);
         setTimeout(function() {
             window.location=redirectUrl
         }, 3000);
@@ -16,4 +15,8 @@
 <body>
     <h1>Redirecting to docs.zizmor.sh</h1>
     <p>If you are not redirected automatically, follow the <a id="dest" href="https://docs.zizmor.sh/release-notes/">link</a>.</p>
+    <script>
+        // YOLO
+        document.getElementById("dest").setAttribute("href", redirectUrl);
+    </script>
 </html>
