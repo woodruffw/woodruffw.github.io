@@ -6,15 +6,14 @@
     <link rel="canonical" href="https://docs.zizmor.sh/release-notes/">
 </head>
 <body>
-    <h1>Redirecting to docs.zizmor.sh</h1>
+    <h1>Redirecting to docs.zizmor.sh 🌈</h1>
     <p>If you are not redirected automatically, follow the <a id="dest" href="https://docs.zizmor.sh/release-notes/">link</a>.</p>
     <script>
-        // Script is down here because it needs to be run after the DOM is loaded.
         let fragment = window.location.hash;
         let redirectUrl = `https://docs.zizmor.sh/release-notes/${fragment}`;
         setTimeout(function() {
             window.location=redirectUrl
-        }, 3000);
+        }, 1000);
         document.getElementById("dest").setAttribute("href", redirectUrl);
     </script>
 </html>
