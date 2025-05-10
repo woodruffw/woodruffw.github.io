@@ -14,6 +14,7 @@ _TEMPLATE = string.Template(
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="7; url=https://docs.zizmor.sh/">
     <title>Redirecting to docs.zizmor.sh</title>
     <link rel="canonical" href="${real_dest}">
 </head>
